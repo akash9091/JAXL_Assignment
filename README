@@ -1,8 +1,18 @@
+Technologies used:
+Javascript - I have used this to code the backend of the webApp
+NodeJS - It is used to implement the backend
+HandleBars - Its is the templating engine I have used to do the templating of the frontend.
+CSS - I have used this to style the frontend.
+
+Commands to run the project:
+1. npm init -y
+2. npm i
+3. nodemon app.js
+Server is running on PORT 5000
  
- Assignment is running on PORT 8000
- 
- 
- Run these commond in terminal
- npm init -y
- npm install body-parser express express-handlebars node-localstorage nodemailer nodemon
- nodemon app.js
+Routes
+1. Get "/" - It is added to check if there is any already loggedin Email or not.
+2. Post "/send" - To post the email Id and generate the OTP
+3. Post "/verify" - It is used to verify the backend OTP with the entered OTP
+4. POST "/signout" - It is used to logout the user who is already logged in.
+5. POST "/resend" - It is used to regenerate the OTP
